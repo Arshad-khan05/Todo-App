@@ -4,7 +4,8 @@ import Header from "./My components/Header";
 import Todos from "./My components/Todos";
 import Footer from "./My components/Footer";
 import Addtodo from './My components/Addtodo';
-
+import { BrowserRouter,Router,Route } from 'react-router-dom';
+import About from "./My components/About"
 function App() {
 
 
@@ -51,6 +52,11 @@ function App() {
 
   return (
     <>
+    <BrowserRouter>
+      <Router>
+        <Route path='/about' element = {<About/>}/>
+      </Router>
+    </BrowserRouter>
       <Header title="Todo List" />
       <Addtodo addtodo={addtodo} />
       <Todos todos={todos} Ondelete={Ondelete} />
