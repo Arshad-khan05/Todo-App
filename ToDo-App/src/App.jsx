@@ -17,9 +17,7 @@ function App() {
   }
 
   const addtodo = (title, desc) => {
-    console.log("Hey, I am adding todo!!");
-    console.log(title);
-    console.log(desc);
+
 
     let slno;
     if (todos.length === 0) {
@@ -34,12 +32,11 @@ function App() {
       description: desc,
     };
 
-    console.log(Mytodo);
+ 
     setCount((prevTodos) => [...prevTodos, Mytodo]);
   };
 
   const Ondelete = (todo) => {
-    console.log("Delete button clicked ", todo);
 
     setCount((prevTodos) => prevTodos.filter((e) => e !== todo));
   };
