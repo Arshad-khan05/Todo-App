@@ -1,20 +1,22 @@
 import React from 'react';
 
-const sectionStyle = {
-  margin: '15px 30px',
-};
+const SectionStyle = {
+    margin: '15px 30px',
+  };
+
+  
 
 const About = () => {
   return (
     <>
-      <h2 style={sectionStyle}><strong>About Us</strong></h2>
+      <h2 style={SectionStyle}><strong>About Us</strong></h2>
 
-      <div style={sectionStyle}>
+      <div style={SectionStyle}>
         <h4>Hello User</h4>
         <p>Welcome to our Todo App, the easiest way to manage your tasks effortlessly!</p>
       </div>
 
-      <div style={sectionStyle}>
+      <div style={SectionStyle}>
         <h4><u>About the Developer</u></h4>
         <p>
           I'm Arshad Khan, currently pursuing my Bachelor's in Technology (BTech) at Siddaganga Institute of Technology, Tumkur.
@@ -22,7 +24,7 @@ const About = () => {
         </p>
       </div>
 
-      <div style={sectionStyle}>
+      <div style={SectionStyle}>
         <h4><u>Features</u></h4>
         <ul>
           <li>
@@ -35,7 +37,7 @@ const About = () => {
         </ul>
       </div>
 
-      <div style={sectionStyle}>
+      <div style={SectionStyle}>
         <h4><u>How to Use</u></h4>
         <ul>
           <li>
@@ -48,7 +50,7 @@ const About = () => {
         </ul>
       </div>
 
-      <div style={sectionStyle}>
+      <div style={SectionStyle}>
         <h4><u>Why Todo App</u></h4>
         <ul>
           <li>
@@ -65,7 +67,7 @@ const About = () => {
         </ul>
       </div>
 
-      <div style={sectionStyle}>
+      <div style={SectionStyle}>
         <h4><u>Need Help?</u></h4>
         <p>Got questions or suggestions? Email me at <b>arshad.feedback@gmail.com</b></p>
         <p>Thank you for choosing Todo App!</p>

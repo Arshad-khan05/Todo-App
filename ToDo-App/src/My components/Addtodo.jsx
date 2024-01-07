@@ -19,20 +19,21 @@ const Addtodo = (props) => {
         marginLeft: '15px',
     }
 
+    
     const submit = (e) => {
         e.preventDefault();
         if (!title || !desc) {
-            alert("Title or description cannot be empty !!");
-        }
-        else {
+            alert("Title and description cannot be empty!");
+        } else {
             props.addtodo(title, desc);
         }
         settitle("");
         setdesc("");
     }
     
+
     const divstyle = {
-        marginLeft : '15px'
+        marginLeft: '15px'
     }
 
     return (
